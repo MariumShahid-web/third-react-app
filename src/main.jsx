@@ -6,6 +6,7 @@ import App from './App.jsx'
 import About from './pages/About/About.jsx';
 import ContactUs from './pages/Contact/Contactus.jsx';
 import Dynamic from './pages/Dynamic.jsx';
+import Detail from './pages/Detail.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/about" element={<About/>} />
      <Route path="/contactus" element={<ContactUs/>} />
      <Route path='/collection/:id' element={<Dynamic/>} />
+     <Route path='/product/:id' element={<Detail/>} />
 
     </Routes>
   </BrowserRouter>,
